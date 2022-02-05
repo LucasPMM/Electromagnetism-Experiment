@@ -10,6 +10,8 @@
 		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
 		<link rel="stylesheet" type="text/css" href="css/custom.css" />
 		<script src="js/modernizr.custom.79639.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	</head>
 	<body>
 		<div id="container" class="container">	
@@ -58,20 +60,34 @@
 								<h2 style="text-align:center;">Questão 1</h2>
 								<h3 style="padding: 2%;">Questão:</h3>
 								<ul>
-									<p>Sabendo que a tensão da rede elétrica (V RMS = 127 V ) que alimentou a bobina de 300 voltas é dada por V (t) =
-V o · sin(ωt). Explique o que significa a tensão RMS (V RMS ), mostre e interprete como ela é calculada, e calcule o valor máximo Vo.</p>
+									<p>Sabendo que a tensão da rede elétrica (Vrms = 127V) que alimentou a bobina de 300 voltas é dada por V(t) = Vo · sin(ωt). Explique o que significa a tensão RMS (V RMS), mostre e interprete como ela é calculada, e calcule o valor máximo Vo.</p>
 								</ul>
 								<h3 style="padding: 2%;">Resposta:</h3>
 							
-								<img src="https://mundoprojetado.com.br/wp-content/uploads/2018/09/valor-rms-senoide.png" style="border-radius: 10px; width: 50%; height: auto;display: block; margin-left: auto; margin-right: auto;">
-								<p style="font-size: 20px; text-align: center;">Gráfico que representa uma tensão periódica.</p>
 								<ul>
 									<p>O valor eficaz de uma tensão periódica no tempo, também chamado de tensão RMS, representa o valor de uma tensão constante que produz a mesma dissipação de potência realizada pela tensão periódica.</p>
-									<p>Matemáticamente, o valor eficaz pode ser definido por:</p>
-									<p></p>
-								</ul>
-								<h3 style="padding: 2%;">Em produção...</h3>
-							</div>
+									<p>Pelo enunciado, percebe-se que estamos lidando com uma fonte senoidal (que emite uma onda no formato de seno), dado que sua tensão é definida por V(t) = Vo · sin(ωt). Assim sendo, podemos definir como ela é calculada:</p>
+								  
+                  <img src="https://mundoprojetado.com.br/wp-content/uploads/2018/09/valor-rms-senoide.png" style="border-radius: 10px; width: 50%; height: auto;display: block; margin-left: auto; margin-right: auto;">
+								  <p style="font-size: 14px; text-align: center;">Gráfico que representa uma tensão periódica.</p>
+
+                  <p>Matemáticamente, defini-se uma tensão RMS segundo a equação: \[Vrms\:=\sqrt{\frac{1}{T}\int _{t0}^{t0+T}v^2\left(t\right)dt\:} \]</p>
+                  <p>Como estamos lidando com uma fonte senoidal pode-se substituir v pelo seno e integrar no período T. Como seno ao quadrado será uma função positiva, a integral pode ser realizada sem grandes problemas. Assim, chega-se na seguinte equação para o cálculo do valor máximo da tensão RMS:</p>
+                  <p>\[Vrms\:=\:\frac{Vmax}{\sqrt{2}} \]</p>
+                  <p>Aplicando os dados fornecidos no enunciado, tem-se que \[Vmax\:=\:127\sqrt{2} \]</p>
+                </ul>
+								<h3 style="padding: 2%;">Bibliografia</h3>
+                <p>
+                  <i>
+                    <a style="color: blue;" href="https://edisciplinas.usp.br/pluginfile.php/4523087/mod_resource/content/2/Introdu%C3%A7%C3%A3o%20Te%C3%B3rica%20Exp_02%20Vers%C3%A3o_2019_rev_1_semestral.pdf">Artigo que explica o que é a Vrms</a>
+                  </i>
+                </p>
+                <p>
+                  <i>
+                    <a style="color: blue;" href="https://www.youtube.com/watch?v=_s78no54if0">Vídeo que explica o cálculo da tensão máxima</a>
+                  </i>
+                </p>
+              </div>
 						</div>
 					</div>
 
